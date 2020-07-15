@@ -4,6 +4,9 @@ input.onButtonPressed(Button.A, function () {
 input.onButtonPressed(Button.B, function () {
     Hero.change(LedSpriteProperty.X, 1)
 })
+input.onGesture(Gesture.Shake, function () {
+    basic.showNumber(game.score())
+})
 // Based on this tutorial:drive.google.com/file/d/1p1fm9SlFVr8NQ9ctQvhZ7H-okfxXhabW/view
 let Rock: game.LedSprite = null
 let Hero: game.LedSprite = null
